@@ -1,0 +1,237 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.order_container {
+  padding-top: 30px;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+.parallax-container .section {
+  width: 100%;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+.orderButton{
+  opacity: 0.8;
+}
+
+span {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.logo{
+  height: 62px;
+  position: relative;
+  float: left;
+}
+
+table {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h4 {
+   margin: 0px;
+   font-size: 1.64rem;
+}
+
+th{
+  text-align: center;
+}
+
+.box1 img{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 100%;
+  margin: 20px;
+}
+
+  /* Style the Image Used to Trigger the Modal */
+.myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.myImg:hover {opacity: 0.7;}
+
+ul li a:hover {opacity: 0.7;}
+.hover:hover {opacity: 0.7;}
+.fa-facebook-official:hover {opacity: 0.7;}
+.fa-twitter-square:hover {opacity: 0.7;}
+
+
+  /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 20px; /* Location of the box */
+    margin-top: auto;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    max-height: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+  /* Modal Content (Image) */
+  .boxSistemos, .boxVirtuve, .boxSvetaine {
+      margin-left: auto;
+      margin-right: auto;
+
+      display: block;
+      max-width: 700px;
+      max-height: 500px;
+  }
+
+  .boxVirtuve, .boxSvetaine {
+    padding-top: 90px;
+  }
+
+  .boxSistemos img, .boxVirtuve img, .boxSvetaine img{
+      /* width: 80%; */
+  }
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    max-height: 700px;
+}
+
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  /* #caption {
+     margin: auto;
+     display: block;
+     width: 80%;
+     max-width: 700px;
+     text-align: center;
+     color: #ccc;
+     padding: 10px 0;
+     height: 150px;
+  } */
+
+  /* Add Animation - Zoom in the Modal */
+.boxSistemos, .boxVirtuve, .boxSvetaine #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .boxSistemos, .boxVirtuve, .boxSvetaine {
+      width: 100%;
+  }
+}
+
+.fa {
+  padding-right: 20px;
+}
+
+/* The Close Button */
+  .close {
+     position: absolute;
+     top: 15px;
+     right: 35px;
+     color: #f1f1f1;
+     font-size: 40px;
+     font-weight: bold;
+     transition: 0.3s;
+  }
+  .close:hover,
+  .close:focus {
+     color: #bbb;
+     text-decoration: none;
+     cursor: pointer;
+  }
+
+  /* Next & previous buttons */
+  #back, #forward {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+
+  /* Position the "next button" to the right */
+  #forward {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  #back:hover, #forward:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
